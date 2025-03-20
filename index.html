@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Muhamad Fardan - True Beauty</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            position: relative;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        section h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        #blog img {
+            margin-bottom: 15px;
+        }
+
+        #home p {
+            margin-bottom: 15px;
+        }
+
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .custom-btn {
+            background-color: transparent;
+            border: 2px solid #ff4d4d;
+            color: #ff4d4d;
+            transition: all 0.3s ease-in-out;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+        }
+
+        .custom-btn:hover {
+            background-color: #ff4d4d;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .cast-images {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .cast-images img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cast-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .cast-images h5 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .cast-images div:hover h5 {
+            opacity: 1;
+        }
+
+        .blog-container img,
+        .platform img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blog-container img:hover,
+        .platform img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .blog-container img {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1024px) {
+            section {
+                min-height: auto;
+                padding: 60px 30px;
+            }
+
+            #home {
+                min-height: 100vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                min-height: auto;
+                padding: 40px 20px;
+            }
+
+            #home {
+                min-height: 100vh;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="assets/imgs/True Beauty.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section id="home">
+        <div>
+            <h1>True Beauty</h1>
+            <p>Drama, Komedi, dan Romantis</p>
+            <a href="https://www.viu.com/ott/id/id/vod/1229041/True-Beauty" class="btn custom-btn text-white"
+                target="_blank">
+                <i class="ti-control-play"></i> Watch Now
+            </a>
+        </div>
+    </section>
+
+    <section id="blog" class="container">
+        <h2>Blog</h2>
+        <img src="assets/imgs/True_Beauty_main_poster.jpg" alt="True Beauty Poster" class="img-fluid" width="340px">
+        <p>
+            True Beauty adalah seri televisi Korea Selatan yang dibintangi Moon Ga-young, Cha Eun-woo,
+            Hwang In-youp, dan Park Yoo-na. Berdasarkan webtoon berjudul sama karya Yaongyi.
+        </p>
+    </section>
+
+    <section id="cast" class="container">
+        <h2>Cast</h2>
+        <div class="row text-center cast-images justify-content-center">
+            <div class="col-md-4 col-sm-6 mb-4 position-relative">
+                <img src="assets/imgs/cast/Im Ju-gyeong.jpg" alt="Im Ju-gyeong" class="img-fluid rounded">
+                <h5>Im Ju-gyeong</h5>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 position-relative">
+                <img src="assets/imgs/cast/Lee Su-ho.jpg" alt="Lee Su-ho" class="img-fluid rounded">
+                <h5>Lee Su-ho</h5>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 position-relative">
+                <img src="assets/imgs/cast/Han Seo-jun.jpg" alt="Han Seo-jun" class="img-fluid rounded">
+                <h5>Han Seo-jun</h5>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 position-relative">
+                <img src="assets/imgs/cast/Kang Soo-jin.jpg" alt="Han Seo-jun" class="img-fluid rounded">
+                <h5>Kang Soo-jin</h5>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 position-relative">
+                <img src="assets/imgs/cast/Choi Soo-ah.jpg" alt="Han Seo-jun" class="img-fluid rounded">
+                <h5>Choi Soo-ah</h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="platform" class="container">
+        <h2>Platform</h2>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-2 mb-3">
+                <img src="assets/imgs/platform/viu.png" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <img src="assets/imgs/platform/netflix.png" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <img src="assets/imgs/platform/vidio.png" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <img src="assets/imgs/platform/wetv.png" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <img src="assets/imgs/platform/bilibili.png" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <img src="assets/imgs/platform/primevideo.png" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2025 <a href="https://github.com/fardan23" target="_blank">Muhamad Fardan</a>. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            const revealSections = () => {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight - 100) {
+                        section.classList.add("show");
+                    }
+                });
+            };
+            window.addEventListener("scroll", revealSections);
+            revealSections();
+        });
+
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
